@@ -15,39 +15,6 @@
   let error = null;
   let errorDetails = null;
   let showHistory = false;
-  // Sample history data - replace with your actual data source
-  //   let historyData = [
-  //     {
-  //       source: "New York, NY",
-  //       destination: "Los Angeles, CA",
-  //       distanceKms: 3944.42,
-  //       distanceMiles: 2451.07,
-  //     },
-  //     {
-  //       source: "Chicago, IL",
-  //       destination: "Miami, FL",
-  //       distanceKms: 1878.25,
-  //       distanceMiles: 1166.89,
-  //     },
-  //     {
-  //       source: "San Francisco, CA",
-  //       destination: "Seattle, WA",
-  //       distanceKms: 1094.68,
-  //       distanceMiles: 679.85,
-  //     },
-  //     {
-  //       source: "Boston, MA",
-  //       destination: "Washington, DC",
-  //       distanceKms: 634.45,
-  //       distanceMiles: 394.14,
-  //     },
-  //     {
-  //       source: "Denver, CO",
-  //       destination: "Phoenix, AZ",
-  //       distanceKms: 887.58,
-  //       distanceMiles: 551.51,
-  //     },
-  //   ];
 
   let historyData = [];
 
@@ -58,7 +25,7 @@
     error = null;
 
     try {
-      // Dummy API URL - replace with your actual API endpoint
+      // API end point
       const apiUrl = `http://127.0.0.1:8000/api/v1?source=${encodeURIComponent(sourceAddress)}&destination=${encodeURIComponent(destinationAddress)}`;
 
       const response = await fetch(apiUrl, {
@@ -75,11 +42,10 @@
 
       const data = await response.json();
 
-      // For demo purposes, we'll simulate the expected response structure
-      // Replace this with actual API response parsing
+      // Set distance data
       distanceData = {
-        distanceMiles: data.distanceMiles, // Random demo value
-        distanceKms: data.distanceKms, // Random demo value
+        distanceMiles: data.distanceMiles, 
+        distanceKms: data.distanceKms,
       };
     } catch (err) {
       error = `Calculating distance failed. Error: ${err}`;
@@ -96,7 +62,6 @@
       error = null;
 
       try {
-        // Dummy API URL - replace with your actual API endpoint
         const apiUrl = `http://127.0.0.1:8000/api/v1/history`;
 
         const response = await fetch(apiUrl, {
