@@ -9,7 +9,7 @@ A web application to calculate the distance between two addresses.
 
 1. **Clone the repository**
    Run the commands below in the terminal:
-   git clone https://github.com/yourusername/distance-calculator.git
+   git clone https://github.com/prathyusha-ak/Distance_calculator
    cd distance-calculator
    
 
