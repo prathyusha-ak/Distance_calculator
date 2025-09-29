@@ -13,7 +13,6 @@ A web application to calculate the distance between two addresses.
    
    cd distance-calculator
    
-
 3. **Start the application**
    Run the following command in the terminal:
    docker-compose up --build
