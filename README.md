@@ -10,15 +10,16 @@ A web application to calculate the distance between two addresses.
 1. **Clone the repository**
    Run the commands below in the terminal:
    git clone https://github.com/prathyusha-ak/Distance_calculator
+   
    cd distance-calculator
    
 
-2. **Start the application**
+3. **Start the application**
    Run the command below in the terminal:
    docker-compose up --build
    
 
-3. **Access the application**
+4. **Access the application**
    - Frontend: http://localhost:3000
    - Backend API: http://localhost:8000
    - DB Connection string: mongodb://localhost:27017
