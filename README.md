@@ -8,14 +8,14 @@ A web application to calculate the distance between two addresses.
 ## How to Run
 
 1. **Clone the repository**
-   Run the commands below in the terminal:
+   Run the following commands in the terminal:
    git clone https://github.com/prathyusha-ak/Distance_calculator
    
    cd distance-calculator
    
 
 3. **Start the application**
-   Run the command below in the terminal:
+   Run the following command in the terminal:
    docker-compose up --build
    
 
@@ -30,7 +30,7 @@ A web application to calculate the distance between two addresses.
 - `docker-compose.yml` - Orchestrates all services
 
 ## Stopping the Application
-Run the command below in the terminal:
+Run the following commands in the terminal:
 docker-compose down
 
 
